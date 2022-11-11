@@ -1,0 +1,36 @@
+<p>list-prpduct works!</p>
+{{class}}
+
+<input type="submit" (click)="showMsg()">
+<div [style.backgroundColor]="color">
+    msg
+</div>
+--------------------------------------------
+<input type="submit" (click)="changeColor()" value="change  Color">
+<input type="text" [(ngModel)]="color">
+
+<div *ngFor="let p of listProdcut">
+    <div *ngIf="p.quantity!=0">
+{{p.id}}
+{{p.title}}
+{{p.price}}
+{{p.quantity}}
+{{p.like}}
+</div>
+</div>
+--------------------------------------------
+<div *ngFor="let p of listProdcut">
+
+{{p.id}}
+{{p.title}}
+{{p.price}}
+{{p.quantity}}
+{{p.like}}
+<!--<div *ngIf="p.quantity==0">
+    <input type="submit" value="buy" disabled>
+</div>
+<div *ngIf="p.quantity!=0">
+    <input type="submit" value="buy" >
+</div>-->
+<input type="submit" value="buy" [disabled]="p.quantity==0" >
+</div>
