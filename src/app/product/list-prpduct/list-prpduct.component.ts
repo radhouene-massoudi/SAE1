@@ -1,11 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-list-prpduct',
   templateUrl: './list-prpduct.component.html',
   styleUrls: ['./list-prpduct.component.css']
 })
-export class ListPrpductComponent implements OnInit {
+export class ListPrpductComponent implements OnInit,AfterViewInit {
   listProdcut=[
     {id: 1, title: "T-shirt 1", price: 18, quantity: 0, like: 0},
     {id: 2, title: "T-shirt 2", price: 21, quantity: 10, like: 0},
@@ -17,6 +17,9 @@ Quantity=0;
   constructor() { }
 
   ngOnInit(): void {
+  }
+  ngAfterViewInit(): void {
+    
   }
 
   showMsg(){

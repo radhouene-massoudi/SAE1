@@ -32,5 +32,42 @@
 <div *ngIf="p.quantity!=0">
     <input type="submit" value="buy" >
 </div>-->
-<input type="submit" value="buy" [disabled]="p.quantity==0" >
+<input type="submit" value="buy" [disabled]="p.quantity==0"  class="btn btn-primary">
+</div>
+---------------------------------------------------------- 
+<h1>seance 3</h1>
+<div *ngFor="let p of listProdcut">
+<span *ngIf="p.quantity==0" [style.backgroundColor]="'red'">
+
+    {{p.id}}
+    {{p.title}}
+    {{p.price}}
+    {{p.quantity}}
+    {{p.like}}
+   
+    <input type="submit" value="buy" [disabled]="p.quantity==0"  class="btn btn-primary">
+
+</span> 
+<span *ngIf="p.quantity!=0" [style.backgroundColor]="'green'">
+
+    {{p.id}}
+    {{p.title}}
+    {{p.price}}
+    {{p.quantity}}
+    {{p.like}}
+   
+    <input type="submit" value="buy" [disabled]="p.quantity==0"  class="btn btn-primary">
+
+</span>  
+<span  [ngStyle]="{'backgroundColor':p.quantity==0?'red':'green'}">
+
+    {{p.id}}
+    {{p.title}}
+    {{p.price}}
+    {{p.quantity}}
+    {{p.like}}
+   
+    <input type="submit" value="buy" [disabled]="p.quantity==0"  class="btn btn-primary">
+
+</span> 
 </div>
