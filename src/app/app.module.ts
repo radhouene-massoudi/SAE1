@@ -15,6 +15,7 @@ import { AddproduitComponent } from './core/produit/addproduit/addproduit.compon
 import { NotfoundComponent } from './shared/notfound/notfound.component';
 import { LoginComponent } from './core/user/login/login.component';
 import { DetailproductComponent } from './core/produit/detailproduct/detailproduct.component';
+import { FormproductComponent } from './core/formproduct/formproduct.component';
 
 @NgModule({
   declarations: [
@@ -29,11 +30,13 @@ import { DetailproductComponent } from './core/produit/detailproduct/detailprodu
     AddproduitComponent,
     NotfoundComponent,
     LoginComponent,
-    DetailproductComponent
+    DetailproductComponent,
+    FormproductComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,FormsModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { FormproductComponent } from './core/formproduct/formproduct.component';
 import { AddproduitComponent } from './core/produit/addproduit/addproduit.component';
 import { DetailproductComponent } from './core/produit/detailproduct/detailproduct.component';
 import { ShowProductsComponent } from './core/produit/show-products/show-products.component';
@@ -14,6 +15,9 @@ path:'',redirectTo:'login',pathMatch:'full'
  {
 path:'login',component:LoginComponent
  } ,
+ {
+  path:'formsAdd',component:FormproductComponent
+   } ,
  {
   path:'detail/:idt',component:DetailproductComponent
    } ,

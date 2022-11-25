@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./addproduit.component.css']
 })
 export class AddproduitComponent implements OnInit {
-
+product:any=[];
   constructor() { }
 
   ngOnInit(): void {
   }
+showForm(t:any){
+  console.log(t)
+}
 
 }
