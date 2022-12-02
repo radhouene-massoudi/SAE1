@@ -16,7 +16,9 @@ import { NotfoundComponent } from './shared/notfound/notfound.component';
 import { LoginComponent } from './core/user/login/login.component';
 import { DetailproductComponent } from './core/produit/detailproduct/detailproduct.component';
 import { FormproductComponent } from './core/formproduct/formproduct.component';
-
+import { C1Component } from './core/c1/c1.component';
+import { C2Component } from './core/c2/c2.component';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,12 +33,15 @@ import { FormproductComponent } from './core/formproduct/formproduct.component';
     NotfoundComponent,
     LoginComponent,
     DetailproductComponent,
-    FormproductComponent
+    FormproductComponent,
+    C1Component,
+    C2Component
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

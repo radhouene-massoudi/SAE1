@@ -19,5 +19,5 @@
 <label>price</label>
 <input type="number" name="id" ngModel>
 
-    <input type="submit" value="add product" (click)="showForm(title)" [disabled]="f.invalid">
+    <input type="submit" value="add product" (click)="addP(f.value)">
 </form>
