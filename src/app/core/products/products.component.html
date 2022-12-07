@@ -1,0 +1,8 @@
+<div *ngFor="let p of list">
+{{p.id}}
+{{p.quantity}}
+{{p.title}}
+<a routerLink="/remove/{{p.id}}">remove</a>
+<a [routerLink]="['/update/',p.id]">update</a>
+</div>
+
