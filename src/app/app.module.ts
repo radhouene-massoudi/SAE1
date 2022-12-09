@@ -26,6 +26,7 @@ import { TvComponent } from './core/tv/tv.component';
 import { MobileComponent } from './core/mobile/mobile.component';
 import { ShowoneproductComponent } from './core/showoneproduct/showoneproduct.component';
 import { ErrorsssComponent } from './shared/errorsss/errorsss.component';
+import { UpdatewithInputComponent } from './core/updatewith-input/updatewith-input.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -49,7 +50,8 @@ import { ErrorsssComponent } from './shared/errorsss/errorsss.component';
     TvComponent,
     MobileComponent,
     ShowoneproductComponent,
-    ErrorsssComponent
+    ErrorsssComponent,
+    UpdatewithInputComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,16 @@
+<form #f="ngForm">
+    <label >id</label>
+    <input type="number" name="id" [(ngModel)]="prod.id" #id="ngModel" required>
+    <app-errorsss [err]="id"></app-errorsss>
+    <label >title</label>
+    <input type="text" name="title" [(ngModel)]="prod.title" #title="ngModel" required minlength="3" >
+    <app-errorsss [err]="title"></app-errorsss>
+    <label >quantity</label>
+    <input type="text" name="quantity" [(ngModel)]="prod.quantity" #Q="ngModel" pattern="[0-9]{3}">
+    <div *ngIf="Q.value<0">
+    the quantity must be grater than zero
+    </div>
+    <input type="submit" value="update"  >
+    </form>
+   
+    

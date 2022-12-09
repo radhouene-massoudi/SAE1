@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Product } from 'src/app/model/product';
 import { ProductService } from '../productService/product.service';
 
 @Component({
@@ -8,6 +9,8 @@ import { ProductService } from '../productService/product.service';
 })
 export class ProductsComponent implements OnInit {
 list:any;
+show=false;
+prod!:Product;
   constructor(private productService:ProductService) { }
 
   ngOnInit(): void {
@@ -20,5 +23,8 @@ list:any;
   );
 
   }
-
+  update(p:any){
+    this.show=true
+this.prod=p
+  }
 }
