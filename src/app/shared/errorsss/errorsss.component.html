@@ -1,0 +1,11 @@
+<div *ngIf="err.invalid && err.touched">
+    <div *ngIf="err.invalid">
+        required
+    </div>
+    <div *ngIf="err.errors?.['required']">
+        required
+    </div>
+    <div *ngIf="err.errors?.['minlength']">
+        minlength
+    </div>
+    </div>

@@ -22,6 +22,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { ProductsComponent } from './core/products/products.component';
 import { RemoveproductComponent } from './core/removeproduct/removeproduct.component';
 import { UpdateproductComponent } from './core/updateproduct/updateproduct.component';
+import { TvComponent } from './core/tv/tv.component';
+import { MobileComponent } from './core/mobile/mobile.component';
+import { ShowoneproductComponent } from './core/showoneproduct/showoneproduct.component';
+import { ErrorsssComponent } from './shared/errorsss/errorsss.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,7 +45,11 @@ import { UpdateproductComponent } from './core/updateproduct/updateproduct.compo
     C2Component,
     ProductsComponent,
     RemoveproductComponent,
-    UpdateproductComponent
+    UpdateproductComponent,
+    TvComponent,
+    MobileComponent,
+    ShowoneproductComponent,
+    ErrorsssComponent
   ],
   imports: [
     BrowserModule,
